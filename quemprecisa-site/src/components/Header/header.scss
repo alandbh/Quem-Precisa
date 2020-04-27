@@ -24,4 +24,11 @@ header#header {
     padding-left: 10vw;
     max-width: 700px;
   }
+
+  @media (max-width: 768px) {
+    // height: 80vh;
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }

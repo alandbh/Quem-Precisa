@@ -245,11 +245,9 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 1.7rem;
   line-height: 1.1;
 }
 h3 {
@@ -617,4 +615,9 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+a {
+  color: rebeccapurple;
+  font-weight: bold;
 }
