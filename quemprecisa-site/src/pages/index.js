@@ -1,8 +1,10 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Image05 from "../components/image05"
 import Image04 from "../components/image04"
 import Image02 from "../components/image02"
+import Image01 from "../components/image01"
 import Image03 from "../components/image03"
 import SEO from "../components/seo"
 
@@ -17,7 +19,7 @@ const IndexPage = () => (
     </section>
     <section className="grid-2 right">
       <figure>
-        <Image04 />
+        <Image05 />
       </figure>
       <div>
         <h2>A fome só piora as coisas</h2>
