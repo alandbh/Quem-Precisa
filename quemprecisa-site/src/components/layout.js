@@ -19,6 +19,8 @@ const Layout = ({ children }) => {
     let langCookie =
       getCookie("langCookie") !== "" ? getCookie("langCookie") : getLang()
 
+    setLang(langCookie)
+
     document.cookie = `langCookie=${langCookie}`
 
     if (langCookie !== "pt" && window.location.pathname !== "/en") {
@@ -61,7 +63,7 @@ const Layout = ({ children }) => {
         changeLang={() => {
           changeLang()
         }}
-        lang={getCookie("langCookie")}
+        lang={lang}
         siteTitle={heroText}
       />
       <div
