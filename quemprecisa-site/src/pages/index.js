@@ -124,7 +124,7 @@ const IndexPage = () => (
           rel="noopener noreferrer"
           href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-a8dbfc80-c536-4056-8b6a-8846dbf7cad9"
           name="MP-payButton"
-          class="btn-pay"
+          className="btn-pay"
         >
           <span>Doar via cartão ou boleto</span>
           <Pagamentos />

@@ -23,12 +23,15 @@ import "./style.scss"
 const Layout = ({ children }) => {
   const [lang, setLang] = useState("pt")
   useEffect(() => {
-    let langCookie =
-      getCookie("langCookie") !== "" ? getCookie("langCookie") : getLang()
+    let langCookie
+    if (getCookie("langCookie") !== "") {
+      langCookie = getCookie("langCookie")
+    } else {
+      langCookie = getLang()
+      document.cookie = `langCookie=${langCookie}`
+    }
 
     setLang(langCookie)
-
-    document.cookie = `langCookie=${langCookie}`
 
     if (langCookie !== "pt" && window.location.pathname !== "/en") {
       navigateTo("/en")
