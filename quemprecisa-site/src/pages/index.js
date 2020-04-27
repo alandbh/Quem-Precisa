@@ -10,6 +10,12 @@ import Image02 from "../components/image02"
 import Image01 from "../components/image01"
 import Image03 from "../components/image03"
 import Pagamentos from "../components/Pagamentos"
+import Diego from "../components/fotoDiego"
+import Alan from "../components/fotoAlan"
+import LogoToca from "../components/LogoToca"
+import Bigode from "../components/fotoBigode"
+import IconInstagram from "../images/icon-instagram.svg"
+import IconGlobe from "../images/icon-globe.svg"
 
 import SEO from "../components/seo"
 
@@ -94,8 +100,8 @@ const IndexPage = () => (
         <h2>Mais de 250 marmitas já foram entregues</h2>
         <p>
           Uma ação que começou de um jeito bem informal, já arrecadou{" "}
-          <b>R$3.4446,00</b>, alimenou mais de <b>250 pessoas</b> e ainda ajudou
-          2 pequenos restaurantes da região.
+          <b>R$3.4446,00</b>, alimentando mais de <b>250 pessoas</b> e ainda
+          ajudou 2 pequenos restaurantes da região.
         </p>
         <p>Mas a campanha continua a todo vapor!</p>
 
@@ -114,7 +120,7 @@ const IndexPage = () => (
           transferência bancária.
         </p>
         <p>
-          Par doar via cartão ou boleto, basta clicar no botão abaixo e
+          Par doar R$12,00 via cartão ou boleto, basta clicar no botão abaixo e
           preencher alguns dados. É bem rápido!
         </p>
 
@@ -150,6 +156,85 @@ const IndexPage = () => (
         <Image04 />
       </figure>
     </section>
+
+    <footer>
+      <div className="container">
+        <h1>Saiba quem somos nós</h1>
+        <div className="grid-4">
+          <div>
+            <figure>
+              <Diego />
+            </figure>
+            <div className="content">
+              <h3>Diego Soares</h3>
+              <p>Foi ele quem começou tudo</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/umbilhetepradidi/"
+              >
+                <img src={IconInstagram} />
+              </a>
+            </div>
+          </div>
+          <div>
+            <figure>
+              <Alan />
+            </figure>
+            <div className="content">
+              <h3>Alan Vasconcelos (eu)</h3>
+              <p>Só ajudando a campanha que o Diego começou</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/alandbh/"
+              >
+                <img src={IconInstagram} />
+              </a>
+            </div>
+          </div>
+          <div>
+            <figure>
+              <LogoToca />
+            </figure>
+            <div className="content">
+              <h3>Toca de Assis</h3>
+              <p>São as Irmãs que fazem as entregas das marmitas</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/filhasdapobreza/"
+              >
+                <img src={IconInstagram} />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://tocadeassisirmas.org.br/"
+              >
+                <img src={IconGlobe} />
+              </a>
+            </div>
+          </div>
+          <div>
+            <figure>
+              <Bigode />
+            </figure>
+            <div className="content">
+              <h3>Cantina do Bigode</h3>
+              <p>É o restaurante que vai preparar a comida nesta semana</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/cantina_bigode/"
+              >
+                <img src={IconInstagram} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </Layout>
 )
 
