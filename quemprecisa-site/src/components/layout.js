@@ -5,14 +5,47 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, navigateTo } from "gatsby"
+import { getLang, getCookie } from "../utils/getLang"
 
-import Header from "./header"
+import Header from "./Header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  const [lang, setLang] = useState("pt")
+  useEffect(() => {
+    let langCookie =
+      getCookie("langCookie") !== "" ? getCookie("langCookie") : getLang()
+
+    document.cookie = `langCookie=${langCookie}`
+
+    if (langCookie !== "pt" && window.location.pathname !== "/en") {
+      navigateTo("/en")
+    }
+  })
+
+  function changeLang() {
+    let langCookie =
+      getCookie("langCookie") !== "" ? getCookie("langCookie") : getLang()
+    // let newLang = lang === "pt" ? "en" : "pt"
+    if (langCookie == "pt") {
+      setLang("en")
+      document.cookie = `langCookie=en`
+    } else {
+      setLang("pt")
+      document.cookie = `langCookie=pt`
+      navigateTo("/")
+    }
+    // console.log(newLang)
+    // setLang("en")
+  }
+  // setLang(getLang())
+  // console.log("aasas")
+
+  const heroText =
+    getCookie("langCookie") === "en" ? "English text" : "texto pt"
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,7 +58,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        changeLang={() => {
+          changeLang()
+        }}
+        lang={getCookie("langCookie")}
+        siteTitle={heroText}
+      />
       <div
         style={{
           margin: `0 auto`,
