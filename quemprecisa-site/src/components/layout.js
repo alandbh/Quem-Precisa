@@ -46,7 +46,10 @@ const Layout = ({ children }) => {
   // setLang(getLang())
   // console.log("aasas")
 
-  const heroText = t("Texto pt", "text english")
+  const heroText = t(
+    "Um prato de comida para quem precisa",
+    "A plate of food for the needy."
+  )
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
