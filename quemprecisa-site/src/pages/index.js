@@ -1,6 +1,9 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Image08 from "../components/image08"
+import Image07 from "../components/image07"
+import Image06 from "../components/image06"
 import Image05 from "../components/image05"
 import Image04 from "../components/image04"
 import Image02 from "../components/image02"
@@ -19,7 +22,7 @@ const IndexPage = () => (
     </section>
     <section className="grid-2 right">
       <figure>
-        <Image05 />
+        <Image08 />
       </figure>
       <div>
         <h2>A fome só piora as coisas</h2>
@@ -28,11 +31,19 @@ const IndexPage = () => (
           algumas pessoas, a fome pode ser tão fatal quanto o COVID-19.
         </p>
         <p>
-          Por isso, estou arrecadando doações para a doação de marmitas para os
-          moradores de rua da região leste de Belo Horizonte.
+          Pensando nisso, resolvi me juntar ao meu amigo{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/umbilhetepradidi/"
+          >
+            Diego Soares
+          </a>{" "}
+          e estou aqui arrecadando uma grana ao longo dessa semana para a doação
+          de marmitas aos moradores de rua da região leste de Belo Horizonte.
         </p>
         <p>
-          Cada marmita custa <b>R$12,00</b> e serão preparadas pelo Restaurante{" "}
+          Cada marmita custa <b>R$12,00</b> e serão preparadas pelo restaurante{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -41,6 +52,7 @@ const IndexPage = () => (
             Cantina Do Bigode
           </a>
         </p>
+
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -56,13 +68,18 @@ const IndexPage = () => (
       <div>
         <h2>Sua doação em boas mãos</h2>
         <p>
-          Todo valor arrecadado aqui será transferido para as Irmãs de caridade
-          da Associação{" "}
+          A cada semana, escolhemos um restaurante diferente. Dessa forma, além
+          de dar comida a quem passa fome, você ainda ajuda um pequeno
+          comerciante.
+        </p>
+        <p>
+          Ao final da semana, as Irmãs de caridade da Associação{" "}
           <a href="https://tocadeassisirmas.org.br/">
             "Filhas da Pobreza do Santíssimo Sacramento"
-          </a>
-          . São elas que fazem as entregas das marmitas aos moradores de rua. :)
+          </a>{" "}
+          farão as entregas das marmitas aos moradores de rua. :)
         </p>
+        <p></p>
         <a
           target="_blank"
           className="btn"
@@ -73,8 +90,45 @@ const IndexPage = () => (
         </a>
       </div>
       <figure>
-        <Image03 />
+        <Image06 />
       </figure>
+    </section>
+
+    <section className="grid-2 right">
+      <figure>
+        <Image07 />
+      </figure>
+      <div>
+        <h2>Mais de 250 marmitas já foram entregues</h2>
+        <p>
+          Uma ação que começou de um jeito bem informal, já arrecadou{" "}
+          <b>R$3.4446,00</b>, alimenou mais de <b>250 pessoas</b> e ainda ajudou
+          2 pequenos restaurantes da região.
+        </p>
+        <p>Mas a campanha continua a todo vapor!</p>
+        <p>
+          Se preferir, fazer uma transferência direto para minha conta, fique a
+          vontade. Anote os dados aí:
+        </p>
+        <p>
+          Banco: Nu Pagamentos S.A (código 260) <br />
+          Tipo: Conta de pagamento
+          <br />
+          Agência: 0001
+          <br />
+          Conta: 7496032-0 <br />
+          CPF: 000.055.596-77 <br />
+          Alan Vasconcelos Alves
+        </p>
+        <a
+          target="_blank"
+          className="btn"
+          rel="noopener noreferrer"
+          href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-a8dbfc80-c536-4056-8b6a-8846dbf7cad9"
+        >
+          Doar agora
+        </a>
+      </div>
     </section>
   </Layout>
 )
