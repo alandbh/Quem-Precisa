@@ -15,6 +15,10 @@ section {
   line-height: 1.6;
   margin-bottom: 4rem;
 }
+
+section#donate {
+  padding-top: 2rem;
+}
 .txt-grey {
   color: #888;
 }
@@ -94,10 +98,36 @@ section.grid-2 {
     transform: scale(1.1);
   }
 }
+
+.btn-pay {
+  display: inline-block;
+  margin: 2rem 0;
+
+  span {
+    background: #e6d6f7;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  > div {
+    max-width: 220px;
+    margin: 10px auto;
+  }
+
+  &:hover {
+    span {
+      background: rebeccapurple;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
 .container {
-  max-width: 1200px;
   margin: 4rem auto;
-  padding: 0 20px;
+  padding: 0 10vw;
 }
 .grid-4 {
   display: grid;
@@ -116,6 +146,7 @@ section.grid-2 {
 }
 
 footer {
+  margin-top: 5rem;
   figure {
     flex: 0 0 130px;
     height: 130px;
@@ -130,4 +161,20 @@ footer {
       height: 100px;
     }
   }
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  .content {
+    img {
+      width: 24px;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.account {
+  background: #f1f1f1;
+  padding: 20px;
+  border-left: 3px solid rebeccapurple;
 }

@@ -9,6 +9,8 @@ import Image04 from "../components/image04"
 import Image02 from "../components/image02"
 import Image01 from "../components/image01"
 import Image03 from "../components/image03"
+import Pagamentos from "../components/Pagamentos"
+
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -53,12 +55,7 @@ const IndexPage = () => (
           </a>
         </p>
 
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn"
-          href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-a8dbfc80-c536-4056-8b6a-8846dbf7cad9"
-        >
+        <a className="btn" href="#donate">
           Doar agora
         </a>
       </div>
@@ -80,12 +77,7 @@ const IndexPage = () => (
           farão as entregas das marmitas aos moradores de rua. :)
         </p>
         <p></p>
-        <a
-          target="_blank"
-          className="btn"
-          rel="noopener noreferrer"
-          href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-a8dbfc80-c536-4056-8b6a-8846dbf7cad9"
-        >
+        <a className="btn" href="#donate">
           Doar agora
         </a>
       </div>
@@ -106,11 +98,44 @@ const IndexPage = () => (
           2 pequenos restaurantes da região.
         </p>
         <p>Mas a campanha continua a todo vapor!</p>
+
+        <a className="btn" href="#donate">
+          Doar agora
+        </a>
+      </div>
+    </section>
+
+    <section id="donate" className="grid-2 left">
+      <div>
+        <h1>Quero doar, como faço?</h1>
+        <p>É bem simples!</p>
         <p>
-          Se preferir, fazer uma transferência direto para minha conta, fique a
-          vontade. Anote os dados aí:
+          Você pode enviar sua doação via boleto, cartão de crédito ou mesmo via
+          transferência bancária.
         </p>
         <p>
+          Par doar via cartão ou boleto, basta clicar no botão abaixo e
+          preencher alguns dados. É bem rápido!
+        </p>
+
+        <a
+          mp-mode="dftl"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-a8dbfc80-c536-4056-8b6a-8846dbf7cad9"
+          name="MP-payButton"
+          class="btn-pay"
+        >
+          <span>Doar via cartão ou boleto</span>
+          <Pagamentos />
+        </a>
+
+        <p>
+          Se preferir, você também pode fazer uma transferência direto para
+          minha conta. <br />
+          Anote os dados aí:
+        </p>
+        <p className="account">
           Banco: Nu Pagamentos S.A (código 260) <br />
           Tipo: Conta de pagamento
           <br />
@@ -120,15 +145,10 @@ const IndexPage = () => (
           CPF: 000.055.596-77 <br />
           Alan Vasconcelos Alves
         </p>
-        <a
-          target="_blank"
-          className="btn"
-          rel="noopener noreferrer"
-          href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-a8dbfc80-c536-4056-8b6a-8846dbf7cad9"
-        >
-          Doar agora
-        </a>
       </div>
+      <figure>
+        <Image04 />
+      </figure>
     </section>
   </Layout>
 )
