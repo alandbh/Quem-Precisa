@@ -178,6 +178,13 @@ const SecondPage = () => (
               >
                 <img src={IconInstagram} />
               </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.alanvasconcelos.com"
+              >
+                <img src={IconGlobe} />
+              </a>
             </div>
           </div>
           <div>
