@@ -8,7 +8,7 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, navigateTo } from "gatsby"
-import { getLang, getCookie } from "../utils/getLang"
+import t, { getLang, getCookie } from "../utils/getLang"
 
 import Header from "./Header"
 import "./layout.css"
@@ -44,8 +44,7 @@ const Layout = ({ children }) => {
   // setLang(getLang())
   // console.log("aasas")
 
-  const heroText =
-    getCookie("langCookie") === "en" ? "English text" : "texto pt"
+  const heroText = t("Texto pt", "text english")
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

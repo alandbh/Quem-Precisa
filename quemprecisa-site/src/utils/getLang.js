@@ -33,7 +33,10 @@ export function getCookie(cname) {
 }
 
 function t(stringPt, stringEn) {
-  return getLang() === "en" ? stringEn : stringPt
+  let langCookie =
+    getCookie("langCookie") !== "" ? getCookie("langCookie") : getLang()
+
+  return langCookie === "pt" ? stringPt : stringEn
 }
 
 export default t
