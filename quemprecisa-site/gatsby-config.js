@@ -3,6 +3,7 @@ module.exports = {
     title: `Doe para Quem Precisa`,
     description: `Doe um prato de comida para pessoas em situação de rua`,
     author: `Alan Vasconcelos`,
+    image: "/site-image-pt.png", // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
