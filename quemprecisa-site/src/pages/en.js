@@ -83,7 +83,7 @@ const SecondPage = () => (
         </p>
         <p></p>
         <a className="btn" href="#donate">
-          Doar agora
+          Donate
         </a>
       </div>
       <figure>
