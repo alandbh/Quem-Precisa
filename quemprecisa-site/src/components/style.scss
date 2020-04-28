@@ -100,14 +100,15 @@ section.grid-2 {
 }
 
 .btn-pay {
-  display: inline-block;
+  display: block;
   margin: 2rem 0;
+  text-decoration: none;
 
   span {
     background: #e6d6f7;
     border-radius: 100px;
     display: inline-block;
-    padding: 20px 30px;
+    padding: 15px 40px;
     text-decoration: none;
     transition: 0.3s;
   }
@@ -124,6 +125,11 @@ section.grid-2 {
       color: white;
     }
   }
+}
+
+.pay-methods {
+  max-width: 320px;
+  margin: 2rem 0;
 }
 .container {
   margin: 4rem auto;

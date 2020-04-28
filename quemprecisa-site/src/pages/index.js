@@ -120,7 +120,7 @@ const IndexPage = () => (
           transferência bancária.
         </p>
         <p>
-          Par doar R$12,00 via cartão ou boleto, basta clicar no botão abaixo e
+          Par doar via cartão ou boleto, basta clicar em um dos botões abaixo e
           preencher alguns dados. É bem rápido!
         </p>
 
@@ -132,9 +132,39 @@ const IndexPage = () => (
           name="MP-payButton"
           className="btn-pay"
         >
-          <span>Doar via cartão ou boleto</span>
-          <Pagamentos />
+          <span>
+            Doar R$12,00<small> (uma marmita)</small>
+          </span>
+          {/* <Pagamentos /> */}
         </a>
+        <a
+          mp-mode="dftl"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-bd29502f-f9f1-4a21-86fd-68fce7291658"
+          name="MP-payButton"
+          className="btn-pay"
+        >
+          <span>
+            Doar R$24,00 <small>(duas marmitas)</small>
+          </span>
+          {/* <Pagamentos /> */}
+        </a>
+        <a
+          mp-mode="dftl"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=113001714-cd2803b7-0d0c-49b3-8aa7-185a61f2d7b0"
+          name="MP-payButton"
+          className="btn-pay"
+        >
+          <span>
+            Doar R$36,00 <small>(três marmitas)</small>
+          </span>
+        </a>
+        <div className="pay-methods">
+          <Pagamentos />
+        </div>
 
         <p>
           Se preferir, você também pode fazer uma transferência direto para
