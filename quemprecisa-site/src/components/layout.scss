@@ -619,3 +619,42 @@ a {
   color: rebeccapurple;
   font-weight: bold;
 }
+
+/*
+  Overall structure
+  ----------------------
+*/
+
+[class^="grid-"] {
+  display: grid;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1.5fr;
+  max-width: 900px;
+}
+
+.grid-4 {
+  grid-template-columns: 1fr 1fr;
+  > div {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+}
+
+.container {
+  margin: 4rem auto;
+  padding: 0 10vw;
+}
+
+section {
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}

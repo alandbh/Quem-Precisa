@@ -4,11 +4,7 @@ import Layout from "../components/layout"
 import Image08 from "../components/image08"
 import Image07 from "../components/image07"
 import Image06 from "../components/image06"
-import Image05 from "../components/image05"
 import Image04 from "../components/image04"
-import Image02 from "../components/image02"
-import Image01 from "../components/image01"
-import Image03 from "../components/image03"
 import Pagamentos from "../components/pagamentos"
 import Diego from "../components/fotoDiego"
 import Alan from "../components/fotoAlan"
@@ -203,7 +199,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/umbilhetepradidi/"
               >
-                <img src={IconInstagram} />
+                <img alt="" src={IconInstagram} />
               </a>
             </div>
           </div>
@@ -219,14 +215,14 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/alandbh/"
               >
-                <img src={IconInstagram} />
+                <img alt="" src={IconInstagram} />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.alanvasconcelos.com"
               >
-                <img src={IconGlobe} />
+                <img alt="" src={IconGlobe} />
               </a>
             </div>
           </div>
@@ -242,14 +238,14 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/filhasdapobreza/"
               >
-                <img src={IconInstagram} />
+                <img alt="" src={IconInstagram} />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://tocadeassisirmas.org.br/"
               >
-                <img src={IconGlobe} />
+                <img alt="" src={IconGlobe} />
               </a>
             </div>
           </div>
@@ -265,7 +261,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/cantina_bigode/"
               >
-                <img src={IconInstagram} />
+                <img alt="" src={IconInstagram} />
               </a>
             </div>
           </div>

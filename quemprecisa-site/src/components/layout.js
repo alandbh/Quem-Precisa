@@ -7,7 +7,7 @@
 
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, navigateTo } from "gatsby"
+import { navigateTo } from "gatsby"
 import t, { getLang, getCookie } from "../utils/getLang"
 
 import Header from "./Header"
@@ -30,13 +30,13 @@ const Layout = ({ children }) => {
     if (langCookie !== "pt" && window.location.pathname !== "/en") {
       navigateTo("/en")
     }
-  })
+  }, [])
 
   function changeLang() {
     let langCookie =
       getCookie("langCookie") !== "" ? getCookie("langCookie") : getLang()
     // let newLang = lang === "pt" ? "en" : "pt"
-    if (langCookie == "pt") {
+    if (langCookie === "pt") {
       setLang("en")
       document.cookie = `langCookie=en`
     } else {
@@ -44,25 +44,12 @@ const Layout = ({ children }) => {
       document.cookie = `langCookie=pt`
       navigateTo("/")
     }
-    // console.log(newLang)
-    // setLang("en")
   }
-  // setLang(getLang())
-  // console.log("aasas")
 
   const heroText = t(
     "Um prato de comida para quem precisa",
     "A plate of food for the needy."
   )
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
