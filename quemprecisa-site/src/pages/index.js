@@ -161,22 +161,6 @@ const IndexPage = () => (
         <div className="pay-methods">
           <Pagamentos />
         </div>
-
-        <p>
-          Se preferir, você também pode fazer uma transferência direto para
-          minha conta. <br />
-          Anote os dados aí:
-        </p>
-        <p className="account">
-          Banco: Nu Pagamentos S.A (código 260) <br />
-          Tipo: Conta de pagamento
-          <br />
-          Agência: 0001
-          <br />
-          Conta: 7496032-0 <br />
-          CPF: 000.055.596-77 <br />
-          Alan Vasconcelos Alves
-        </p>
       </div>
       <figure>
         <Image04 />
